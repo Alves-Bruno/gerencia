@@ -1,0 +1,133 @@
+    1  snmp
+    2  ssh
+    3  apt-get install openssh
+    4  apt-get install openssh-server
+    5  snmp
+    6  cd /etc
+    7  ls
+    8  ls | grep sn
+    9  cd ..
+   10  ls
+   11  find / | grep snmp
+   12  find / | grep snmp >> teste.txt
+   13  nano teste.txt 
+   14  sudo apt-get update
+   15  apt-get install snmp snmp-mibs-downloader
+   16  cd /etc/snmp
+   17  ls
+   18  nano snmp.conf snmp.conf 
+   19  nano snmp.conf 
+   20  ls
+   21  cp snmp.conf snmp.conf.bkp
+   22  ls
+   23  nano snmp.conf 
+   24  snmpconf 
+   25  ls
+   26  nano snmp.conf
+   27  snmpwalk -v 1 -c public localhost system
+   28  snmpwalk -v 1 -c public localhost
+   29  snmpwalk -v 1 -c public localhost system
+   30  cd ..
+   31  nano hosts.allow 
+   32  snmpwalk -v 1 -c public localhost system
+   33  snmpwalk -v 1 -c public localhost 1
+   34  snmpwalk -v 1 -c public localhost get
+   35* snmpwalk -v 1 -c public localhost getnextl
+   36  snmpwalk -v 1 -c public localhost system
+   37  snmpwalk -v 1 -c private localhost system
+   38  snmpwalk -Dparse-mibs -v 1 -c private localhost system
+   39* snmpwalk -v2.c -c private localhost system
+   40  snmpwalk -Dparse-mibs -v 1 -c private localhost system
+   41  ls
+   42  cd snmp
+   43  snmpwalk -Dparse-mibs -v 1 -c private localhost system >> teste.txt
+   44  ls
+   45  nano teste.txt 
+   46* snmpwalk -Dparse-mibs -v 1 -c private localhost system
+   47  snmpwalk -v2c -c public localhost .1.3.6.1.2.1.1.3
+   48  apt-get remove snmp snmp-mibs-downloader
+   49  apt-get install snmpd*
+   50  /etc/init.d/snmpd restart
+   51  snmpwalk -v2c -c public localhost .1.3.6.1.2.1.1.3
+   52  snmpwalk -v2c -c public localhost localhost
+   53  snmpwalk -v2c -c public localhost .1.3.6.1.2.1.1.3
+   54  ifconfig 
+   55  snmpwalk -v2c -c public localhost .1.3.6.1.2.1.1.3
+   56  snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.3
+   57  cat .bash_history
+   58  history
+   59  history >> comandos.txt
+   60  nano comandos.txt 
+   61  apt-get install git
+   62  ls
+   63  mv comandos.txt /home/alves/
+   64  cd /home/alves/
+   65  ls
+   66  mkdir git
+   67  ls
+   68  cd git
+   69  git init
+   70  cd ..
+   71  ls
+   72  mv comandos.txt git/
+   73  ls
+   74  cd git/
+   75  ls
+   76  git add comandos.txt 
+   77  git commit -m "Primeira aula Pratica"
+   78  git config --global user.name "Bruno Alves"
+   79  git config --global user.email "bdalves@inf.ufsm.br"
+   80  git commit -m "Primeira aula Pratica"
+   81  git remote add origin https://github.com/Alves-Bruno/gerencia.git
+   82  git push -u origin master
+   83  nano comandos.txt 
+   84  snmpwalk -v1 -c public localhost .1.3.6.1.2.1.1.3
+   85  snmpwalk -v1 -c public localhost sysUpTime
+   86  snmpwalk -v1 -c public localhost sysUpTime.0
+   87  nano /etc/default/snmpd 
+   88  snmpwalk -v1 -c public localhost sysUpTime.0
+   89  snmpwalk 
+   90  apt-get install snmptranslate
+   91  snmpwalk -v1 -c public localhost sysUpTime.0
+   92  snmpwalk -v1 -c public localhost sysuptime
+   93  apt-get install snmp-mibs-downloader
+   94  /etc/init.d/snmpd restart
+   95  snmpwalk -v1 -c public localhost sysuptime
+   96  cd /etc/default/
+   97  nano snmpd 
+   98  download-mibs 
+   99  /etc/init.d/snmpd restart
+  100  snmpwalk -v1 -c public localhost sysuptime
+  101  cd /etc/default/
+  102  nano snmpd 
+  103  /etc/init.d/snmpd restart
+  104  snmpwalk -v1 -c public localhost sysuptime
+  105  cd /etc/default/
+  106  nano snmpd 
+  107  /etc/init.d/snmpd restart
+  108  snmpwalk -v1 -c public localhost sysuptime
+  109  cd /etc/default/
+  110  nano snmpd 
+  111  snmpwalk -v1 -c public localhost sysUpTime
+  112  /etc/init.d/snmpd restart
+  113  cd /etc/snmp
+  114  ls
+  115  nano snmp
+  116  snmpwalk -v1 -c public localhost sysUpTime
+  117  snmpwalk -v1 -c public localhost sysuptime.0
+  118  download-mibs 
+  119  mibs
+  120  mibs :
+  121  nano /etc/snmp/snmp.conf
+  122  download-mibs 
+  123  snmpwalk -v1 -c public localhost sysuptime
+  124  ls
+  125  cd /home/
+  126  ls
+  127  cd alves/
+  128  ls
+  129  cd git/
+  130  ls
+  131  history >> comandos
+  132  nano comandos
+  133  history >> comandos2.txt
