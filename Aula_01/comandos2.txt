@@ -1,0 +1,11 @@
+   93  apt-get install snmp-mibs-downloader
+   98  download-mibs 
+   99  /etc/init.d/snmpd restart
+
+  121  nano /etc/snmp/snmp.conf
+
+	-->> ALTERAR "mib:" para "mib: MIB + ALL"
+
+  99  /etc/init.d/snmpd restart
+
+  https://wiki.debian.org/SNMP
